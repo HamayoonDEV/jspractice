@@ -1,5 +1,5 @@
-function greater(i, j) {
-  return i > j ? console.log(i) : console.log(j);
+function imageWidth(width, height) {
+  return width > height;
 }
 
-greater(5, 6);
+console.log(imageWidth(100, 500));
