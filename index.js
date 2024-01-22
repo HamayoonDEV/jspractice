@@ -1,9 +1,5 @@
 function greater(i, j) {
-  if (i > j) {
-    return console.log(i);
-  } else {
-    return console.log(j);
-  }
+  return i > j ? console.log(i) : console.log(j);
 }
 
-greater(4, 2);
+greater(5, 6);
