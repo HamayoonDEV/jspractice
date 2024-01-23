@@ -1,11 +1,13 @@
-function checkNumber(limit) {
-  for (let i = 1; i <= limit; i++) {
-    if (i % 2 == 0) {
-      console.log(i, "Even");
-    } else {
-      console.log(i, "Odd");
+function checkTruthyNumber(array) {
+  let count = 0;
+  for (const value of array) {
+    if (value) {
+      count++;
     }
   }
+  return console.log(count);
 }
 
-checkNumber(10);
+const array = [null, false, 2, 3, 4];
+
+checkTruthyNumber(array);
