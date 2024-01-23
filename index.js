@@ -1,13 +1,14 @@
-function checkTruthyNumber(array) {
-  let count = 0;
-  for (const value of array) {
-    if (value) {
-      count++;
+function objectProperty(obj) {
+  for (const value in obj) {
+    if (typeof obj[value] === "string") {
+      console.log(value, obj[value]);
     }
   }
-  return console.log(count);
 }
 
-const array = [null, false, 2, 3, 4];
-
-checkTruthyNumber(array);
+const obj = {
+  title: "head",
+  count: 1,
+  name: "hamayoon",
+};
+objectProperty(obj);
