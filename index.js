@@ -1,14 +1,11 @@
-function objectProperty(obj) {
-  for (const value in obj) {
-    if (typeof obj[value] === "string") {
-      console.log(value, obj[value]);
+function sumOfMultiple(pera) {
+  let sum = 0;
+  for (let i = 1; i <= pera; i++) {
+    if (i % 3 == 0 || i % 5 == 0) {
+      sum += i;
     }
   }
+  return console.log(sum);
 }
 
-const obj = {
-  title: "head",
-  count: 1,
-  name: "hamayoon",
-};
-objectProperty(obj);
+sumOfMultiple(10);
