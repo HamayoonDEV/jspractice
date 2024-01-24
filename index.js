@@ -1,7 +1,14 @@
-function checkingStart(rows) {
-  let pattren = "";
-  for (let i = 0; i <= rows; i++) {
-    console.log((pattren += "*"));
+function primeNumber(number) {
+  for (let num = 2; num <= number; num++) {
+    let isPrime = true;
+    for (let factor = 2; factor < num; factor++) {
+      if (num % factor === 0) {
+        isPrime = false;
+      }
+    }
+    if (isPrime) {
+      console.log(num);
+    }
   }
 }
-checkingStart(5);
+primeNumber(10);
